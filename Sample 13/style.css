@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+   --primary-color: blue;
+   --secondary-color: red;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color:var(--secondary-color);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}

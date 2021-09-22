@@ -1,0 +1,42 @@
+:root {
+  --main-color: #e02f6b;
+  --white: #ffffff;
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+}
+
+body {
+  background-color: wheat;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 18px;
+  color: var(--main-color);
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  transition: width 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  color: var(--white);
+}
